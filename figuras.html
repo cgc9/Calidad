@@ -4,13 +4,61 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <title>Figuras</title>
 </head>
 
 <body>
     <!-- <div class"row"></div> -->
-    <form action="">
-        <label for="">Ingrese 3 Numeros:</label><br>
+
+    <div class="container" style="margin-top: 10%; justify-content:center;display: flex;">
+        <div class="card w-50">
+            <div class="card-body">
+              <h5 class="card-title">¿Qué tipo de triángulo es?</h5>
+              <form>
+                <div class="row">
+                  <div class="col">
+                    <input  id="ladoUno" type="number" type="text" required class="form-control " required placeholder="lado 1">
+                  </div>
+                  <div class="col">
+                    <input id="ladoDos" type="number" type="text" required class="form-control "  required placeholder="lado 2">
+                  </div>
+                  <div class="col">
+                    <input id="ladoTres" type="number" type="text" required class="form-control " required placeholder="lado 3">
+                  </div>
+                </div>
+              </form>
+              <button class="btn btn-success" style="margin-top:20px;"  id="CalcularTriangulo" onclick="triangulo()">Calcular</button>
+            </div>
+          </div>
+    </div>
+    <div class="container" style="margin-top: 10%; justify-content:center;display: flex;">
+      <div class="card w-50">
+          <div class="card-body">
+            <h5 class="card-title">¿Qué tipo de cuadrilátero es?</h5>
+            <form>
+              <div class="row">
+                <div class="col">
+                  <input  id="lado1" type="number" type="text" required class="form-control " required placeholder="lado 1">
+                </div>
+                <div class="col">
+                  <input id="lado2" type="number" type="text" required class="form-control "  required placeholder="lado 2">
+                </div>
+                <div class="col">
+                  <input id="lado3" type="number" type="text" required class="form-control " required placeholder="lado 3">
+                </div>
+                <div class="col">
+                  <input id="lado4" type="number" type="text" required class="form-control " required placeholder="lado 4">
+                </div>
+              </div>
+            </form>
+            <button class="btn btn-success" style="margin-top:20px;"  id="CalcularFigura" onclick="calcularFigura()">Calcular</button>
+          </div>
+        </div>
+  </div>
+  
+    <!-- <form action="">
+        <label for="">Ingrese 3 Numeros:</label>
         <label for="ladoUno">1:</label>
         <input id="ladoUno" type="number" type="text" required><br> <br>
         <label for="ladoDos">2:</label>
@@ -18,8 +66,8 @@
         <label for="ladoTres">3:</label>
         <input id="ladoTres" type="number" type="text" required><br><br>
         <button type="submit" id="CalcularTriangulo" onclick="triangulo()">Calcular</button>
-    </form>
-    <form action="">
+    </form> -->
+    <!-- <form action="">
         <label for="">Ingrese 4 Números</label>
         <label for="lado1"></label>
         <input id="lado1" type="number" type="text" required><br> <br>
@@ -31,9 +79,12 @@
         <input id="lado4" type="number" type="text" required><br><br>
         <button type="submit" id="CalcularFigura" onclick="calcularFigura()">Calcular</button>
 
-    </form>
+    </form> -->
 
     <script src="figuras.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 </body>
 
 
