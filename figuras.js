@@ -51,8 +51,12 @@ function calcularFigura() {
             } else if (uniqs.length == 2) {
                 alert("Rectangulo");
     
-            } else if (uniqs.length == 3)
+            } else if (uniqs.length == 3){
                 alert("Trapecio");
+            }else{
+                alert("Otro tipo")
+            }
+                
         }else{
             alert("Los valores de los lados deben ser diferentes y mayores que 0");
         }
